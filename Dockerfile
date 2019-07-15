@@ -26,3 +26,5 @@ RUN set -ex && \
     apk del .build-deps
 
 ENV PYHQ_OUTPUT="INFLUXDB"
+
+CMD ["telegraf"]
