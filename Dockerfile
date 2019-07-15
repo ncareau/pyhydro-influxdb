@@ -24,3 +24,5 @@ RUN set -ex && \
     cp -a /usr/src/telegraf*/* /usr/bin/ && \
     rm -rf *.tar.gz* /usr/src/telegraf /root/.gnupg && \
     apk del .build-deps
+
+ENV PYHQ_OUTPUT="INFLUXDB"
